@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 98vw;
+        height: 70vw;
+    }
+   .container{
+    width: 98vw;
+    height: 30vw;
+    display: flex;
+    margin-left: 300px;
+   }
+   .container img{
+    width: 500px;
+    height: 300px;
+    transition: 0.3s;
+    filter:brightness(100%);
+   }
+   .box1{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-right: 20px;
+   }
+   .box1 h2{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: aliceblue;
+    transition: 0.3s;
+   }
+   .box1 p{
+    position: absolute;
+    top: 245px;
+    left: 50px;
+    color: aliceblue;
+    font-size: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+   }
+   .box1:hover img {
+    transform: translateX(-40px);
+    filter: brightness(70%);
+   }
+   .box1:hover h2{
+    transform: translateY(-40px) ;
+   }
+   .box1:hover p{
+    transform: translateY(-40px);
+    opacity: 1;
+    visibility: visible;
+   }
+   .box2{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+   }
+   .box2 h2{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: aliceblue;
+    transition: 0.3s;
+   }
+   .box2 p{
+    position: absolute;
+    top: 245px;
+    left: 50px;
+    color: aliceblue;
+    font-size: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+   }
+   .box2:hover img {
+    transform: translateX(-40px);
+    filter: brightness(70%);
+   }
+   .box2:hover h2{
+    transform: translateY(-40px) ;
+   }
+   .box2:hover p{
+    transform: translateY(-40px);
+    opacity: 1;
+    visibility: visible;
+   }
+   .box3{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    overflow: hidden; 
+    margin-left: 300px;
+   }
+   .box3 img{
+    width: 800px;
+    height: 700px;
+    transition: 0.4s;
+    filter: brightness(100%);
+   }
+   .box3 h1{
+    color: white;
+    position: absolute;
+    top:350px;
+    left: 50px;
+    font-weight: lighter;
+    transition: 0.4s;
+   }
+   .line {
+    width:100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: white;
+    transform: translateY(100%);
+    transition: 0.4s;
+   }
+   .box3:hover img{
+    filter: brightness(70%);
+   }
+   .box3:hover h1{
+    transform: translateY(20px);
+   }
+   .box3:hover .line{
+    transform: translateY(0%);
+   }
+</style>
+<body>
+        <div class="container">
+           <div class="box1">
+            <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <h2>NICE LILY </h2>
+            <p>LILY LIKE TO PLAY WITH</p>
+           </div>
+           <div class="box2">
+            <img src="https://static.wixstatic.com/media/9d8ed5_9f18f647a5314cb0a7fff4a0706c3f0c~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9d8ed5_9f18f647a5314cb0a7fff4a0706c3f0c~mv2.jpg" alt="">
+            <h2>NICE LILY</h2>
+            <p>LILY LIKE TO PLAY WITH</p>
+           </div>
+        </div>
+        <div class="box3">
+            <img src="https://vcdn1-dulich.vnecdn.net/2022/05/27/du-lich-Viet-Nam-1653637298.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ym-7007uJgaMngJ5q0surA" alt="">
+            <h1>DREAMY 
+                <span>HONEY</span> NOW </h1>
+            <div class="line"></div>
+        </div>
+</body>
+</html>
+
